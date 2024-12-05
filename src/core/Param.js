@@ -36,8 +36,8 @@ export default class Param {
   get(callback, failedCallback) {
     var paramClient = new Service({
       ros: this.ros,
-      name: '/rosapi/get_param',
-      serviceType: 'rosapi/GetParam'
+      name: '/rosapi/get_param_names',
+      serviceType: 'rosapi_msgs/srv/GetParamNames'
     });
 
     var request = {name: this.name};
